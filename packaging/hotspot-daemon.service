@@ -1,0 +1,11 @@
+[Unit]
+Description=Hotspot GUI privileged backend (stub)
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/hotspot-daemon
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
